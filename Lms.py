@@ -43,7 +43,7 @@ if ask=='Some where with in this week':
     print('lovley '''+ Name)
 else:
     print('You dont get it do you'''+ Name)
-print('What ever time you said later')
+print('One or two'+ ask + 'later')
 
 enchante = input('I see your back''' + Name)
 
