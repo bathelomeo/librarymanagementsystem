@@ -1,21 +1,19 @@
 import datetime
 print('Welcome to Nathaniel,s library system ')
 Name=input('What is your Name ?')
-today = datetime.datetime.today()
-print("Current Date and time time is  ")
-print(today.strftime('%p'))
-if (today.strftime('%p')) == "AM":
-    print('Good Morning')
-# else:
-#     print('Good Evening')
-# #The Male of Female part
+now = datetime.datetime.now()
+print('Current time is:')
+print(now.strftime('%p'))
+if (now.strftime("%p")) == "AM":
+     print("Good morning!")
+elif (now.strftime("%p")) == "PM":
+    print("Good Afternoon!")
+else:
+    print('Good Evening')
 
-# gender = input('Are you Male or Female')
-# if gender == 'Male':
-#     print('Hello mrs '+ Name)
-# if gender == '':
-#     print
-# Thebook = input('What book do you want ''' + Name)
+gender = input('Mr or Mrs you can only respond by typing (Mr or Mrs)')
+
+Thebook = input('What book do you want ' + gender + Name)
 # Book = input('Is the book do you want Fiction or Non Fiction ''' + Name)
 # if Book == 'Fiction':
 #     print('Then go to the right ''' + Name)
@@ -75,4 +73,4 @@ if (today.strftime('%p')) == "AM":
 # else:
 #     print('Go and find the book now '''+ Name)
 #     print('And if cant ,bring the money by this week ''' + Name)
-#     print('Or else never get in again ''' + Name) 
+#     print('Or else never get in again ''' + Name)
